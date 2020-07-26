@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage1.master.cs" Inherits="MasterPage1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style3
+        {
+            height: 23px;
+        }
+        .style5
+        {
+            height: 27px;
+        }
+        .style6
+        {
+            width: 32px;
+        }
+        .style7
+        {
+            width: 202px;
+        }
+        .style8
+        {
+            width: 321px;
+        }
+        .style9
+        {
+            width: 17px;
+        }
+        .style10
+        {
+            width: 423px;
+        }
+        </style>
+</head>
+<body background="background_f.jpg">
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td class="style5" colspan="2">
+                    <table class="style1">
+                        <tr>
+                            <td>
+                                <asp:Image ID="Image1" runat="server" Height="200px" Width="1072px" 
+                                    ImageUrl="~/upeer.gif" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="style5" 
+                       
+                    style="background-image: url('/mproject/leftback.jpg'); background-repeat: repeat">
+                    &nbsp; 
+                    
+                    <asp:Image ID="Image2" runat="server" Height="350px" Width="160px" 
+                        ImageUrl="~/marque.gif" />
+                    
+                </td>
+                <td class="style5">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style3" colspan="2" bgcolor="Black">
+                    <table class="style1">
+                        <tr>
+                            <td class="style8">
+                                <asp:Label ID="Label2" runat="server" ForeColor="White" Text="Developed by"></asp:Label>
+                            </td>
+                            <td class="style9">
+                                &nbsp;</td>
+                            <td class="style10">
+                                <asp:Label ID="Label4" runat="server" Font-Bold="True" ForeColor="Red" 
+                                    Text="All Right Reserved. Copyright to"></asp:Label>
+                            </td>
+                            <td class="style6">
+                                &nbsp;</td>
+                            <td class="style7">
+                                <asp:Label ID="Label1" runat="server" ForeColor="White" Text="Follow us on"></asp:Label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style8">
+                                <asp:Label ID="Label3" runat="server" ForeColor="White" 
+                                    Text="Rounak Roy, Kousambi Kumar, Priyasma Pal"></asp:Label>
+                            </td>
+                            <td class="style9">
+                                &nbsp;</td>
+                            <td class="style10">
+                                <asp:Label ID="Label5" runat="server" Font-Bold="True" Font-Size="Large" 
+                                    ForeColor="Red" Text="indiauction.com"></asp:Label>
+                            </td>
+                            <td class="style6">
+                                &nbsp;</td>
+                            <td class="style7">
+                                &nbsp;
+                                <asp:ImageButton ID="ImageButton1" runat="server" 
+                                    onclick="ImageButton1_Click" Height="30px" ImageAlign="TextTop" 
+                    Width="30px" ImageUrl="~/facebook.jpg"/>
+                                &nbsp;
+                                <asp:ImageButton ID="ImageButton2" runat="server" Height="30px" ImageAlign="TextTop" 
+                    Width="30px" ImageUrl="~/twitter.jpg" onclick="ImageButton2_Click"/>
+                                &nbsp;
+                                <asp:ImageButton ID="ImageButton3" runat="server" Height="30px" ImageAlign="TextTop" 
+                    Width="30px" ImageUrl="~/google.jpg" onclick="ImageButton3_Click"/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
